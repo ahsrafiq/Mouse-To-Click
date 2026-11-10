@@ -1,0 +1,54 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum ServiceCategory {
+  CCTV
+  MEDICAL_BILLING
+  HEALTH_INSURANCE
+  GENERAL
+}
+
+enum SubmissionStatus {
+  NEW
+  CONTACTED
+  IN_PROGRESS
+  RESOLVED
+  ARCHIVED
+}
+
+model Inquiry {
+  id          String           @id @default(uuid())
+  createdAt   DateTime         @default(now())
+  updatedAt   DateTime         @updatedAt
+  name        String
+  email       String
+  phone       String?
+  service     ServiceCategory  @default(GENERAL)
+  company     String?
+  details     String
+  status      SubmissionStatus @default(NEW)
+  consent     Boolean          @default(true)
+  metadata    Json?
+}
+
+model InsuranceApplication {
+  id              String           @id @default(uuid())
+  createdAt       DateTime         @default(now())
+  updatedAt       DateTime         @updatedAt
+  fullName        String
+  email           String
+  phone           String
+  familySize      Int              @default(1)
+  monthlyIncome   String
+  existingCoverage String          @default("no")
+  notes           String?
+  status          SubmissionStatus @default(NEW)
+  consent         Boolean          @default(true)
+}
+

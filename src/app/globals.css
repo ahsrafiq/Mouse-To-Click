@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-charcoal: #1C1F26;
+  --color-charcoal-card: #2A2E38;
+  --color-charcoal-border: #3A3F4B;
+  --color-charcoal-muted: #6B7280;
+  --color-white: #FFFFFF;
+  --color-offwhite: #F5F7FA;
+  --color-electric-blue: #1E5BFF;
+  --color-blue-hover: #5B8CFF;
+
+  --font-heading: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-body: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Default Light Mode */
+  html {
+    color-scheme: light;
+  }
+
+  html.dark {
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: var(--color-white);
+    color: var(--color-charcoal);
+    font-family: var(--font-body);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+
+  /* Dark Mode Class Override */
+  .dark body,
+  html.dark body {
+    background-color: var(--color-charcoal);
+    color: var(--color-white);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    letter-spacing: -0.02em;
+  }
+
+  /* Accessible focus states: WCAG AA compliant */
+  :focus-visible {
+    outline: 2px solid var(--color-electric-blue);
+    outline-offset: 2px;
+  }
+
+  .dark :focus-visible {
+    outline: 2px solid var(--color-electric-blue);
+    box-shadow: 0 0 0 2px #FFFFFF inset;
+  }
+}
+
+/* Subtle scanning line animation */
+@keyframes scanline {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(1000%);
+  }
+}
+
+.animate-scanline {
+  animation: scanline 7s linear infinite;
+  will-change: transform;
+}
+
+/* Subtle pulse glow for electric blue LED indicators */
+@keyframes blue-beacon {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.45;
+    transform: scale(0.92);
+  }
+}
+
+.animate-beacon {
+  animation: blue-beacon 2s ease-in-out infinite;
+}
+
+/* Smooth custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F5F7FA;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #1C1F26;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6B7280;
+  border-radius: 4px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #3A3F4B;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1E5BFF;
+}
