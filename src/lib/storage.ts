@@ -137,7 +137,7 @@ export async function getInquiries(): Promise<StoredInquiry[]> {
     const list = await prisma.inquiry.findMany({
       orderBy: { createdAt: 'desc' },
     });
-    return list.map((item) => ({
+    return list.map((item: any) => ({
       id: item.id,
       createdAt: item.createdAt.toISOString(),
       name: item.name,
@@ -214,7 +214,7 @@ export async function getInsuranceApplications(): Promise<StoredInsuranceApplica
     const list = await prisma.insuranceApplication.findMany({
       orderBy: { createdAt: 'desc' },
     });
-    return list.map((item) => ({
+    return list.map((item: any) => ({
       id: item.id,
       createdAt: item.createdAt.toISOString(),
       fullName: item.fullName,
