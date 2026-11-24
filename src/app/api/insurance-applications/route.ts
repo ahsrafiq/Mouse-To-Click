@@ -55,7 +55,7 @@ export async function GET(req: NextRequest) {
   const authCookie = req.cookies.get('admin_token')?.value;
   const authHeader = req.headers.get('authorization');
 
-  if (authCookie !== 'authenticated' && authHeader !== `Bearer ${process.env.ADMIN_PASSWORD || 'admin123'}`) {
+  if (authCookie !== 'authenticated' && authHeader !== `Bearer ${process.env.ADMIN_PASSWORD}`) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
   }
 

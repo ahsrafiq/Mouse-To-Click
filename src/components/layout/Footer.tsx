@@ -100,7 +100,7 @@ export const Footer: React.FC = () => {
               </li>
               <li>
                 <a href="/services/it-technical-support" className="hover:text-blue-electric transition-colors">
-                  IT & Technical Support
+                  E-Commerce Services
                 </a>
               </li>
               <li>

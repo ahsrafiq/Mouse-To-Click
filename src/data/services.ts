@@ -218,55 +218,55 @@ export const serviceDivisions: ServiceDivision[] = [
   {
     slug: 'it-technical-support',
     divisionNumber: 'Division 05',
-    title: 'IT & Technical Support',
-    shortTitle: 'IT Support',
-    tagline: 'Technology and Digital Support That Moves You Forward',
-    headline: 'Practical IT and Technical Operations Support for Growing Teams',
+    title: 'E-Commerce Services',
+    shortTitle: 'E-Commerce',
+    tagline: 'Scale Stores. Streamline Sales. Grow Faster.',
+    headline: 'End-to-End E-Commerce Operations and Store Management Support',
     supportingText:
-      'Practical IT, technical, and digital operations support for growing businesses.',
+      'Comprehensive store management, catalog administration, order processing, and customer support for online merchants.',
     description:
-      'Ensure uninterrupted digital workflows with practical remote IT troubleshooting, help desk assistance, and technical monitoring. MouseToClick supports your internal staff and technology infrastructure with dependable technical specialists.',
+      'MouseToClick delivers full-cycle e-commerce operational support tailored to brands, Shopify/Amazon sellers, and multi-channel retailers. Our dedicated specialists handle product listings, inventory management, order fulfillment tracking, and buyer inquiries with precision and speed.',
     deliverables: [
       {
-        title: 'Remote IT Support',
+        title: 'Product Catalog & Listing Management',
         description:
-          'Remote desktop troubleshooting, software installation support, and user workstation assistance.',
+          'SEO-friendly product creation, attribute tagging, variant mapping, high-quality image uploads, and inventory syncing across platforms.',
       },
       {
-        title: 'Technical Troubleshooting',
+        title: 'Order Processing & Fulfillment Support',
         description:
-          'Step-by-step issue diagnosis, hardware/software fault isolation, and resolution guidance.',
+          'Order verification, dispatch coordination, tracking notification updates, and dropshipping or 3PL logistics communication.',
       },
       {
-        title: 'Help Desk Support',
+        title: 'Multi-Channel Marketplace Operations',
         description:
-          'Centralized ticketing support, tier-1 user resolution, credential resets, and query dispatch.',
+          'Store maintenance across Shopify, Amazon, eBay, Walmart, WooCommerce, and TikTok Shop with unified reporting.',
       },
       {
-        title: 'Network Support',
+        title: 'Inventory & Stock Level Monitoring',
         description:
-          'Basic connectivity checks, VPN access assistance, and remote routing diagnostic support.',
+          'Real-time stock audits, reorder threshold alerts, backorder tracking, and supplier coordination to avoid stockouts.',
       },
       {
-        title: 'System Monitoring',
+        title: 'E-Commerce Customer Care & Returns',
         description:
-          'Uptime checks, alert observation, and notification escalation to engineering teams.',
+          'Pre-purchase inquiry resolution, post-order support, return and refund handling, and positive customer review management.',
       },
       {
-        title: 'IT Administration',
+        title: 'Promotion & Price Management',
         description:
-          'User onboarding/offboarding, access directory updates, asset logging, and policy documentation.',
+          'Coupon configuration, flash sale scheduling, competitor price monitoring, and bundle promotion execution.',
       },
     ],
     keyBenefits: [
-      'Resolves routine technical issues quickly to minimize employee downtime',
-      'Cost-effective help desk coverage without staffing a heavy in-house IT team',
-      'Clear documentation of recurring system issues and root causes',
-      'Reliable escalations for mission-critical infrastructure incidents',
+      'Accelerates store scaling without increasing in-house operational headcount',
+      'Minimizes order errors and fulfillment delays with dedicated back-office specialists',
+      'Provides 24/7 store coverage and customer support across busy shopping seasons',
+      'Maintains consistent, accurate product catalogs across multiple sales channels',
     ],
-    serviceCategory: 'Information Technology',
+    serviceCategory: 'E-Commerce & Retail',
     iconName: 'Monitor',
-    accentColor: 'text-orange-500',
+    accentColor: 'text-blue-500',
   },
   {
     slug: 'digital-business-solutions',

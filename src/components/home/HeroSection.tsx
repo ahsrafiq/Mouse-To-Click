@@ -13,7 +13,7 @@ import {
   Shield,
   TrendingUp,
   Headphones,
-  Monitor,
+  ShoppingBag,
   Database,
   Sparkles,
   ExternalLink,
@@ -174,32 +174,32 @@ export const slides: HeroSlide[] = [
   {
     id: 'it-support',
     divisionNumber: 'Division 05',
-    badge: 'Division 05 • IT & Technical Support',
-    title: 'IT & Technical Support',
-    shortTitle: 'IT Support',
-    imageTagline: 'Your IT Partner for Seamless Operations.',
-    headline: 'Technology Support That Moves You Forward',
+    badge: 'Division 05 • E-Commerce Services',
+    title: 'E-Commerce Services',
+    shortTitle: 'E-Commerce',
+    imageTagline: 'Scale Stores. Streamline Sales. Grow Faster.',
+    headline: 'End-to-End Solutions for Growing E-Commerce Brands',
     subtext:
-      'Practical remote IT troubleshooting, help desk assistance, and technical monitoring for growing businesses seeking dependable tech operations without heavy in-house overhead.',
-    imageSrc: '/images/slides/it-support.jpg',
-    imageAlt: 'IT & Technical Support - Your IT Partner for Seamless Operations',
-    buttonLabel: 'Explore IT & Technical Support',
+      'Comprehensive store management, product catalog optimization, order fulfillment support, and customer assistance to help digital merchants scale seamlessly.',
+    imageSrc: '/images/slides/ecommerce.svg',
+    imageAlt: 'E-Commerce Services - Scale Stores. Streamline Sales. Grow Faster.',
+    buttonLabel: 'Explore E-Commerce Services',
     buttonHref: '/services/it-technical-support',
-    category: 'Information Technology',
-    icon: Monitor,
-    accentColor: 'text-amber-500',
-    accentBg: 'bg-amber-500/10',
-    accentBorder: 'border-amber-500/25',
+    category: 'E-Commerce & Retail',
+    icon: ShoppingBag,
+    accentColor: 'text-blue-500',
+    accentBg: 'bg-blue-500/10',
+    accentBorder: 'border-blue-500/25',
     keyHighlights: [
-      'Remote Desktop Troubleshooting',
-      'Help Desk Ticketing & User Setup',
-      'Network Connectivity & VPN Support',
-      'System Uptime & Incident Monitoring',
+      'Product Listing & Catalog Management',
+      'Order Processing & Inventory Updates',
+      'Multi-Channel Marketplace Support',
+      'E-Commerce Customer Service & Returns',
     ],
     metrics: [
-      { value: 'Tier 1-3', label: 'Helpdesk Coverage' },
-      { value: '99.9%', label: 'Uptime Monitoring' },
-      { value: 'Rapid', label: 'Issue Resolution SLA' },
+      { value: '99.5%', label: 'Order Accuracy' },
+      { value: '24/7', label: 'Store & Sales Support' },
+      { value: '2x+', label: 'Faster Store Scaling' },
     ],
   },
   {
@@ -358,9 +358,8 @@ export const HeroSection: React.FC = () => {
 
           {/* Dynamic Headline & Description */}
           <div
-            className={`space-y-4 transition-all duration-300 ease-out ${
-              isAnimating ? 'opacity-0 translate-y-2' : 'opacity-100 translate-y-0'
-            }`}
+            className={`space-y-4 transition-all duration-300 ease-out ${isAnimating ? 'opacity-0 translate-y-2' : 'opacity-100 translate-y-0'
+              }`}
           >
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold tracking-tight leading-[1.15] text-charcoal dark:text-white">
               {slide.headline.includes('Support') ? (
@@ -387,9 +386,8 @@ export const HeroSection: React.FC = () => {
 
           {/* Key Deliverables Checklist (changing with division) */}
           <div
-            className={`transition-all duration-300 ease-out ${
-              isAnimating ? 'opacity-0' : 'opacity-100'
-            }`}
+            className={`transition-all duration-300 ease-out ${isAnimating ? 'opacity-0' : 'opacity-100'
+              }`}
           >
             <p className="text-xs font-body font-semibold uppercase tracking-wider text-charcoal-muted mb-2.5">
               Core Capabilities in this Division:
@@ -431,9 +429,8 @@ export const HeroSection: React.FC = () => {
             {slide.metrics.map((metric, idx) => (
               <div
                 key={idx}
-                className={`transition-all duration-300 ${
-                  isAnimating ? 'opacity-0 scale-95' : 'opacity-100 scale-100'
-                }`}
+                className={`transition-all duration-300 ${isAnimating ? 'opacity-0 scale-95' : 'opacity-100 scale-100'
+                  }`}
               >
                 <p className="text-xl sm:text-2xl font-bold font-heading text-charcoal dark:text-white">
                   {metric.value}
@@ -487,9 +484,8 @@ export const HeroSection: React.FC = () => {
             <div className="relative overflow-hidden bg-slate-950 group">
               {/* The Picture Image with Transition */}
               <div
-                className={`relative w-full aspect-[685/253] overflow-hidden transition-all duration-300 ease-out ${
-                  isAnimating ? 'opacity-20 scale-[0.99]' : 'opacity-100 scale-100'
-                }`}
+                className={`relative w-full aspect-[685/253] overflow-hidden transition-all duration-300 ease-out ${isAnimating ? 'opacity-20 scale-[0.99]' : 'opacity-100 scale-100'
+                  }`}
               >
                 <Image
                   src={slide.imageSrc}
@@ -579,11 +575,10 @@ export const HeroSection: React.FC = () => {
                     <button
                       key={s.id}
                       onClick={() => goTo(idx)}
-                      className={`flex flex-col items-center justify-center p-2 rounded-xl text-xs font-body transition-all border ${
-                        isActive
-                          ? 'bg-blue-electric text-white border-blue-electric shadow-electric-subtle font-semibold scale-100'
-                          : 'bg-offwhite dark:bg-charcoal border-charcoal/10 dark:border-charcoal-border text-charcoal dark:text-white/80 hover:border-blue-electric/50 hover:bg-white dark:hover:bg-charcoal/80'
-                      }`}
+                      className={`flex flex-col items-center justify-center p-2 rounded-xl text-xs font-body transition-all border ${isActive
+                        ? 'bg-blue-electric text-white border-blue-electric shadow-electric-subtle font-semibold scale-100'
+                        : 'bg-offwhite dark:bg-charcoal border-charcoal/10 dark:border-charcoal-border text-charcoal dark:text-white/80 hover:border-blue-electric/50 hover:bg-white dark:hover:bg-charcoal/80'
+                        }`}
                     >
                       <SIcon className={`w-4 h-4 mb-1 ${isActive ? 'text-white' : s.accentColor}`} />
                       <span className="text-[10px] font-mono opacity-80 leading-none">
