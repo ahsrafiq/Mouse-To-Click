@@ -12,7 +12,7 @@ const services = [
   { label: 'Security Solutions', href: '/services/security-solutions' },
   { label: 'Finance & Accounting', href: '/services/finance-accounting' },
   { label: 'Customer Support & Call Center', href: '/services/customer-support' },
-  { label: 'IT & Technical Support', href: '/services/it-technical-support' },
+  { label: 'E-Commerce Services', href: '/services/it-technical-support' },
   { label: 'Digital Business Solutions', href: '/services/digital-business-solutions' },
 ];
 

@@ -1,0 +1,99 @@
+<svg width="685" height="253" viewBox="0 0 685 253" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#08152B"/>
+      <stop offset="50%" stop-color="#12254C"/>
+      <stop offset="100%" stop-color="#0B1A36"/>
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.1"/>
+    </linearGradient>
+    <linearGradient id="cartGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60A5FA"/>
+      <stop offset="100%" stop-color="#2563EB"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#2563EB"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="685" height="253" fill="url(#bgGrad)"/>
+
+  <!-- Subtle tech grid -->
+  <g opacity="0.08" stroke="#94A3B8" stroke-width="1">
+    <line x1="0" y1="50" x2="685" y2="50"/>
+    <line x1="0" y1="100" x2="685" y2="100"/>
+    <line x1="0" y1="150" x2="685" y2="150"/>
+    <line x1="0" y1="200" x2="685" y2="200"/>
+    <line x1="70" y1="0" x2="70" y2="253"/>
+    <line x1="140" y1="0" x2="140" y2="253"/>
+    <line x1="210" y1="0" x2="210" y2="253"/>
+    <line x1="280" y1="0" x2="280" y2="253"/>
+  </g>
+
+  <!-- Glow circle in visual area -->
+  <circle cx="180" cy="126" r="95" fill="url(#glowGrad)"/>
+
+  <!-- Visual: Laptop / Storefront outline -->
+  <rect x="85" y="65" width="190" height="115" rx="10" fill="#0E1D38" stroke="#1E40AF" stroke-width="2"/>
+  <rect x="95" y="75" width="170" height="95" rx="6" fill="#0A162D"/>
+  
+  <!-- Store Header Bar inside laptop -->
+  <rect x="95" y="75" width="170" height="22" rx="4" fill="#1E293B"/>
+  <circle cx="107" cy="86" r="3.5" fill="#EF4444"/>
+  <circle cx="117" cy="86" r="3.5" fill="#F59E0B"/>
+  <circle cx="127" cy="86" r="3.5" fill="#10B981"/>
+  <rect x="140" y="80" width="80" height="12" rx="3" fill="#334155"/>
+
+  <!-- Central Shopping Cart & Sparkle -->
+  <g transform="translate(142, 108)">
+    <path d="M10 8 H18 L24 38 H50 L56 18 H22" fill="none" stroke="#38BDF8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="27" cy="46" r="3.5" fill="#60A5FA"/>
+    <circle cx="47" cy="46" r="3.5" fill="#60A5FA"/>
+    <!-- Product in cart -->
+    <rect x="28" y="16" width="16" height="14" rx="2" fill="#2563EB"/>
+  </g>
+
+  <!-- Laptop Base -->
+  <path d="M65 180 L295 180 L275 190 L85 190 Z" fill="#1E293B" stroke="#1E40AF" stroke-width="1.5"/>
+
+  <!-- Floating badges -->
+  <!-- 24/7 Support / Order processing -->
+  <g transform="translate(60, 40)">
+    <rect width="85" height="26" rx="13" fill="#0F172A" stroke="#38BDF8" stroke-width="1.5"/>
+    <circle cx="16" cy="13" r="4" fill="#10B981"/>
+    <text x="26" y="17" font-family="system-ui, sans-serif" font-size="10" font-weight="bold" fill="#F8FAFC">Orders 24/7</text>
+  </g>
+
+  <!-- Sales Growth Tag -->
+  <g transform="translate(215, 42)">
+    <rect width="90" height="26" rx="13" fill="#0F172A" stroke="#10B981" stroke-width="1.5"/>
+    <text x="14" y="17" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#10B981">↗ +120%</text>
+    <text x="56" y="17" font-family="system-ui, sans-serif" font-size="9" fill="#94A3B8">Growth</text>
+  </g>
+
+  <!-- Global Marketplace Tag -->
+  <g transform="translate(205, 185)">
+    <rect width="95" height="26" rx="13" fill="#0F172A" stroke="#60A5FA" stroke-width="1.5"/>
+    <text x="12" y="17" font-family="system-ui, sans-serif" font-size="10" font-weight="bold" fill="#60A5FA">★ Multi-Store</text>
+  </g>
+
+  <!-- Right Side: Bold Typography matching other banners -->
+  <text x="375" y="105" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="36" font-weight="800" fill="#FFFFFF" letter-spacing="-0.5">
+    E-Commerce
+  </text>
+  <text x="375" y="148" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="36" font-weight="800" fill="#FFFFFF" letter-spacing="-0.5">
+    Services
+  </text>
+
+  <!-- Tagline matching picture style -->
+  <text x="375" y="185" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="500" fill="#93C5FD">
+    Scale Stores. Streamline Sales. Grow Faster.
+  </text>
+
+  <!-- Blue accent curve -->
+  <path d="M375 204 Q460 198 550 212" stroke="url(#accentGrad)" stroke-width="3" stroke-linecap="round" fill="none"/>
+</svg>

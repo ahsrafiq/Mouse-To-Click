@@ -15,7 +15,7 @@ const serviceOptions = [
   { value: 'security', label: 'Security Solutions (Remote CCTV Monitoring)' },
   { value: 'finance', label: 'Finance & Accounting' },
   { value: 'customer-support', label: 'Customer Support & Call Center' },
-  { value: 'it-support', label: 'IT & Technical Support' },
+  { value: 'it-support', label: 'E-Commerce' },
   { value: 'digital-solutions', label: 'Digital Business Solutions' },
   { value: 'general', label: 'General Corporate Partnership / Consultation' },
 ];
