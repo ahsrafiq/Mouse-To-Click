@@ -13,7 +13,7 @@ export interface ServiceDivision {
   }[];
   keyBenefits: string[];
   serviceCategory: string;
-  iconName: 'HeartPulse' | 'Shield' | 'TrendingUp' | 'Headphones' | 'Monitor' | 'Database';
+  iconName: 'HeartPulse' | 'Shield' | 'TrendingUp' | 'Headphones' | 'Monitor' | 'Database' | 'Code';
   accentColor: string;
 }
 
@@ -320,6 +320,59 @@ export const serviceDivisions: ServiceDivision[] = [
     serviceCategory: 'Digital Operations',
     iconName: 'Database',
     accentColor: 'text-cyan-500',
+  },
+  {
+    slug: 'web-development',
+    divisionNumber: 'Division 07',
+    title: 'Web Development & Applications',
+    shortTitle: 'Web Development',
+    tagline: 'Modern, High-Performance Web & Cloud Solutions',
+    headline: 'Custom Web Development, Portals & Full-Stack Cloud Applications',
+    supportingText:
+      'High-speed, conversion-optimized websites and web apps engineered to scale your digital presence.',
+    description:
+      'MouseToClick designs, builds, and maintains modern, secure, and responsive web platforms. From dynamic landing pages and corporate websites to complex SaaS portals, APIs, and headless e-commerce architectures, our development teams deliver clean code and seamless user experiences.',
+    deliverables: [
+      {
+        title: 'Custom Full-Stack Web Development',
+        description:
+          'End-to-end development using modern frameworks including React, Next.js, Node.js, and TypeScript with clean architecture.',
+      },
+      {
+        title: 'Responsive UI/UX & Frontend Engineering',
+        description:
+          'Pixel-perfect mobile, tablet, and desktop interfaces optimized for maximum responsiveness, accessibility, and smooth performance.',
+      },
+      {
+        title: 'E-Commerce & Portal Development',
+        description:
+          'Custom customer dashboards, administrative portals, booking systems, and seamless payment gateway integrations.',
+      },
+      {
+        title: 'API Development & System Integration',
+        description:
+          'Robust REST and GraphQL APIs, third-party CRM/ERP synchronizations, and webhooks for automated workflow efficiency.',
+      },
+      {
+        title: 'Website Performance & Core Web Vitals Optimization',
+        description:
+          'Comprehensive speed audits, image optimization, server caching, and code splitting to secure 95+ Google Lighthouse scores.',
+      },
+      {
+        title: 'Maintenance, Security & Cloud Hosting',
+        description:
+          'Ongoing security patching, SSL management, database backups, CI/CD pipeline deployments, and cloud infrastructure management.',
+      },
+    ],
+    keyBenefits: [
+      'High-converting, lightning-fast digital storefronts and corporate sites',
+      'Scalable cloud architecture that grows with your user base without downtime',
+      'Modern tech stack ensuring top Google PageSpeed and SEO rankings',
+      'Dedicated ongoing maintenance and fast-turnaround developer support',
+    ],
+    serviceCategory: 'Technology & Web Engineering',
+    iconName: 'Code',
+    accentColor: 'text-indigo-500',
   },
 ];
 

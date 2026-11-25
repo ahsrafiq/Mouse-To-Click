@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/Button';
 import { Input } from '@/components/ui/Input';
 import { Textarea } from '@/components/ui/Textarea';
 import { Select } from '@/components/ui/Select';
+import { CountrySelect } from '@/components/ui/CountrySelect';
 import { Card } from '@/components/ui/Card';
 import { Badge } from '@/components/ui/Badge';
 
@@ -17,6 +18,7 @@ const serviceOptions = [
   { value: 'customer-support', label: 'Customer Support & Call Center' },
   { value: 'it-support', label: 'E-Commerce' },
   { value: 'digital-solutions', label: 'Digital Business Solutions' },
+  { value: 'web-development', label: 'Web Development & Applications' },
   { value: 'general', label: 'General Corporate Partnership / Consultation' },
 ];
 
@@ -48,6 +50,8 @@ function ContactFormInner() {
         setFormData((prev) => ({ ...prev, service: 'it-support' }));
       } else if (initialService.includes('digital')) {
         setFormData((prev) => ({ ...prev, service: 'digital-solutions' }));
+      } else if (initialService.includes('web')) {
+        setFormData((prev) => ({ ...prev, service: 'web-development' }));
       }
     }
   }, [initialService]);
@@ -260,13 +264,14 @@ function ContactFormInner() {
                       value={formData.email}
                       onChange={handleChange}
                     />
-                    <Input
+                    <CountrySelect
                       name="country"
                       label="Country"
-                      placeholder="e.g. United States, UK, Canada..."
                       required
                       value={formData.country}
-                      onChange={handleChange}
+                      onChange={(selectedCountry) =>
+                        setFormData((prev) => ({ ...prev, country: selectedCountry }))
+                      }
                     />
                   </div>
 

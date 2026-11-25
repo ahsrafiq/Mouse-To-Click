@@ -14,6 +14,7 @@ const services = [
   { label: 'Customer Support & Call Center', href: '/services/customer-support' },
   { label: 'E-Commerce Services', href: '/services/it-technical-support' },
   { label: 'Digital Business Solutions', href: '/services/digital-business-solutions' },
+  { label: 'Web Development & Apps', href: '/services/web-development' },
 ];
 
 const navLinks = [

@@ -15,6 +15,7 @@ import {
   Headphones,
   ShoppingBag,
   Database,
+  Code,
   Sparkles,
   ExternalLink,
 } from 'lucide-react';
@@ -230,6 +231,37 @@ export const slides: HeroSlide[] = [
       { value: '99.8%', label: 'Data Precision SLA' },
       { value: '40%+', label: 'Productivity Boost' },
       { value: 'Scalable', label: 'On-Demand Capacity' },
+    ],
+  },
+  {
+    id: 'web-development',
+    divisionNumber: 'Division 07',
+    badge: 'Division 07 • Web Development & Applications',
+    title: 'Web Development & Apps',
+    shortTitle: 'Web Dev',
+    imageTagline: 'Build. Launch. Scale Faster.',
+    headline: 'High-Performance Web Platforms & Full-Stack Cloud Apps',
+    subtext:
+      'Custom website development, business web portals, SaaS platforms, and lightning-fast web experiences built with modern stacks (React, Next.js, TypeScript) to elevate your digital presence.',
+    imageSrc: '/images/slides/web-development.svg',
+    imageAlt: 'Web Development Services - Build. Launch. Scale Faster.',
+    buttonLabel: 'Explore Web Development',
+    buttonHref: '/services/web-development',
+    category: 'Technology & Web Engineering',
+    icon: Code,
+    accentColor: 'text-indigo-400',
+    accentBg: 'bg-indigo-500/10',
+    accentBorder: 'border-indigo-500/25',
+    keyHighlights: [
+      'Custom Full-Stack Next.js / React Apps',
+      'High-Speed Core Web Vitals (99+ Lighthouse)',
+      'Enterprise Portals & Custom Integrations',
+      'Responsive, Modern Mobile-First UX',
+    ],
+    metrics: [
+      { value: '< 100ms', label: 'Server Response' },
+      { value: '99.9%', label: 'Uptime SLA' },
+      { value: '100%', label: 'SEO & Mobile Ready' },
     ],
   },
 ];
@@ -565,8 +597,8 @@ export const HeroSection: React.FC = () => {
                 </span>
               </div>
 
-              {/* 6 Division Selection Buttons */}
-              <div className="grid grid-cols-3 sm:grid-cols-6 gap-2">
+              {/* Division Selection Buttons */}
+              <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-2">
                 {slides.map((s, idx) => {
                   const SIcon = s.icon;
                   const isActive = idx === current;

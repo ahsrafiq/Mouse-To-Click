@@ -108,6 +108,11 @@ export const Footer: React.FC = () => {
                   Digital Business Solutions
                 </a>
               </li>
+              <li>
+                <a href="/services/web-development" className="hover:text-blue-electric transition-colors">
+                  Web Development &amp; Apps
+                </a>
+              </li>
             </ul>
           </div>
 

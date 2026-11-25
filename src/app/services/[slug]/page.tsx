@@ -8,6 +8,7 @@ import {
   Headphones,
   Monitor,
   Database,
+  Code,
   ArrowRight,
   CheckCircle2,
   ShieldCheck,
@@ -28,6 +29,7 @@ const iconMap = {
   Headphones,
   Monitor,
   Database,
+  Code,
 };
 
 interface PageProps {

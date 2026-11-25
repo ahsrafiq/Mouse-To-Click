@@ -24,6 +24,7 @@ export const InquirySchema = z.object({
     'customer-support',
     'it-support',
     'digital-solutions',
+    'web-development',
     'cctv',
     'billing',
     'insurance',

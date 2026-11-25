@@ -8,6 +8,7 @@ import {
   Headphones,
   Monitor,
   Database,
+  Code,
   ArrowRight,
   CheckCircle2,
   Users,
@@ -28,6 +29,7 @@ const iconMap = {
   Headphones,
   Monitor,
   Database,
+  Code,
 };
 
 const whyUs = [
@@ -156,7 +158,7 @@ export default function HomePage() {
               Our Services
             </Badge>
             <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-charcoal dark:text-white tracking-tight">
-              Six Service Divisions. One Trusted Partner.
+              Comprehensive Service Divisions. One Trusted Partner.
             </h2>
             <p className="text-charcoal-muted dark:text-white/80 text-base font-body leading-relaxed">
               From healthcare administration to IT support, we provide flexible outsourcing solutions
